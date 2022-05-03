@@ -166,7 +166,7 @@ public class Impressao {
                 ", total coloridas: " + paginasColoridas +
                 ", total preto e branco: " + paginasPretoEBranco +
                  ", " +   frenteVerso +
-                " total: " + String.format("%.2f", calcularTotal());
+                " total: R$ " + String.format("%.2f", calcularTotal());
 
     }
 }

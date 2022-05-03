@@ -165,7 +165,7 @@ public class Impressao {
         return  "total de paginas: " + paginasTotais +
                 ", total coloridas: " + paginasColoridas +
                 ", total preto e branco: " + paginasPretoEBranco +
-                 " " +   frenteVerso +
+                 ", " +   frenteVerso +
                 " total: " + String.format("%.2f", calcularTotal());
 
     }

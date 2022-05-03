@@ -1,5 +1,8 @@
+import java.util.Locale;
+
 public class Program {
     public static void main(String[] args) {
+        Locale.setDefault(new Locale("pt", "BR"));
         Bebida cafe = new BebidaCafe();
         System.out.println(cafe);
 

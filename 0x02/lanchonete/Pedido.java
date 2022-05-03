@@ -3,9 +3,9 @@ import java.util.HashSet;
 
 public class Pedido {
 
-    HashSet<ItemPedido> itensDentroCaixa = new HashSet<ItemPedido>();
+    private HashSet<ItemPedido> itensDentroCaixa = new HashSet<ItemPedido>();
 
-    HashSet<ItemPedido> itensForaCaixa = new HashSet<ItemPedido>();
+    private HashSet<ItemPedido> itensForaCaixa = new HashSet<ItemPedido>();
 
     public Pedido(TipoBebida tipoBebida, TipoBrinde tipoBrinde, TamanhoBatata tamanhoBatata, TipoLanche tipoLanche) {
 
@@ -46,7 +46,7 @@ public class Pedido {
         result1 += "\tFora da Caixa:\n";
 
         for (ItemPedido item : itensForaCaixa) {
-            result1 += String.format("\t\t\t- %s %s\n", item.getTipo(), item.getNome());
+            result1 += String.format("\t\t- %s %s\n", item.getTipo(), item.getNome());
         }
 
         String result2 = "";
@@ -54,7 +54,7 @@ public class Pedido {
         result2 += "\tDentro da Caixa:\n";
 
         for (ItemPedido item : itensDentroCaixa) {
-            result2 += String.format("\t\t\t- %s %s\n",  item.getTipo(), item.getNome());
+            result2 += String.format("\t\t- %s %s\n",  item.getTipo(), item.getNome());
         }
 
         return result1 + result2;

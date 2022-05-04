@@ -7,8 +7,7 @@ public class NaveEspacial {
         this.ataque = ataque;
     }
 
-    public NaveEspacial(){
-
+    public NaveEspacial() {
     }
 
     public int getSaude() {
@@ -19,10 +18,18 @@ public class NaveEspacial {
         return ataque;
     }
 
+    public void setSaude(int saude) {
+        this.saude = saude;
+    }
+
+    public void setAtaque(int ataque) {
+        this.ataque = ataque;
+    }
 
     @Override
     public String toString() {
 
         return String.format("Saude: %d - Ataque: %d", getSaude(),getAtaque());
     }
+
 }
